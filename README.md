@@ -7,7 +7,7 @@ A Flask App that returns Futurama quotes
 
 Clone the repo
 
-    git clone https://gitlab.com/deafmice/futurama_quote_machine.git
+    git clone https://github.com/ephergent/futurama_quote_machine.git
 
 Setup you virtualenv and activate it
 

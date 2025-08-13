@@ -1,0 +1,21 @@
+[flake8]
+max-line-length = 88
+extend-ignore = 
+    # E203: whitespace before ':' (conflicts with black)
+    E203,
+    # W503: line break before binary operator (conflicts with black)
+    W503,
+    # F401: imported but unused (handled by isort)
+    F401
+exclude = 
+    .git,
+    __pycache__,
+    venv,
+    .venv,
+    .tox,
+    .mypy_cache,
+    .pytest_cache,
+    migrations/
+per-file-ignores =
+    __init__.py:F401
+    tests/*:D

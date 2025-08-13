@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <title>Futurama Quote Machine</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body style="
+            background:url({{ url_for('static', filename='img/background.jpg') }});
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            ">
+    
+    <!-- Main content container -->
+    <main class="main-container">
+        <!-- Header -->
+        <header class="header">
+            <h1 class="title glitch" data-text="FUTURAMA QUOTES">FUTURAMA QUOTES</h1>
+            <div class="subtitle">:: YEAR 3000 DATABASE ACCESS :::</div>
+        </header>
+
+        <!-- Quote display box -->
+        <section class="quote-box">
+            <div class="character-display">
+                <div class="character-frame">
+                    <img src="static/img/{{ quote.character }}" alt="{{ quote.character.replace('.jpg', '') }}" class="character-img" />
+                    <div class="character-name">{{ quote.character.replace('.jpg', '')|upper }}</div>
+                </div>
+            </div>
+            
+            <div class="quote-content">
+                <div class="quote-text">"{{ quote.quote }}"</div>
+            </div>
+            
+            <div class="controls">
+                <a href="{{ url_for('index') }}" class="btn-primary">
+                    <span class="btn-text">GENERATE NEW QUOTE</span>
+                    <span class="btn-glitch">[EXEC]</span>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-left">
+                <span class="footer-title">Futurama Quote Machine</span>
+            </div>
+            <div class="footer-right">
+                <a href="https://jeremyschroeder.net" target="_blank" class="footer-link">jeremyschroeder.net</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

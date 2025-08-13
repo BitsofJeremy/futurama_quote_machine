@@ -2,6 +2,14 @@
 
 A modern Flask web application that serves Futurama quotes with both a web interface and RESTful API. Completely refactored with modern Python practices, comprehensive testing, and production-ready features.
 
+## 🚀 Futurama Quote Machine Screenshot
+
+Frontend:
+![screenshot.png](screenshot.png)
+
+API:
+![screenshot_api.png](screenshot_api.png)
+
 ## ✨ Features
 
 - 🎭 **Web Interface**: Clean, responsive web interface displaying random Futurama quotes with character images
@@ -33,7 +41,7 @@ A modern Flask web application that serves Futurama quotes with both a web inter
 
 1. **Clone the repository**
    ```bash
-   git clone https://gitlab.com/deafmice/futurama_quote_machine.git
+   git clone https://github.com/BitsofJeremy/futurama_quote_machine.git
    cd futurama_quote_machine
    ```
 
